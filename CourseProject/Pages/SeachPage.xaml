@@ -1,0 +1,59 @@
+﻿<Page x:Class="CourseProject.Pages.SeachPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CourseProject.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="SeachPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+
+
+        </Grid.RowDefinitions>
+        <ListView Grid.Row="1" x:Name="BasketView" ScrollViewer.HorizontalScrollBarVisibility="Disabled" HorizontalContentAlignment="Center" Background="#D4DDE1" Foreground="#AA4B41" >
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal"></WrapPanel>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="20" Width="250">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <StackPanel Orientation="Horizontal" Grid.Row="2">
+                            <TextBlock Text="Наименование: " HorizontalAlignment="Left"></TextBlock>
+                            <TextBlock Text="{Binding Product}" HorizontalAlignment="Left"></TextBlock>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Grid.Row="3">
+                            <TextBlock Text="Описание: " HorizontalAlignment="Left"></TextBlock>
+                            <TextBlock Text="{Binding Description}" HorizontalAlignment="Left"></TextBlock>
+                        </StackPanel>
+                        <StackPanel Grid.Row="4" Orientation="Horizontal">
+                            <TextBlock Text="Цена: "  HorizontalAlignment="Left"></TextBlock>
+                            <TextBlock Text="{Binding Cost}" HorizontalAlignment="Left"></TextBlock>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Grid.Row="5">
+                            <TextBlock Text="Количество: " HorizontalAlignment="Left"></TextBlock>
+                            <TextBlock Text="{Binding Count}" HorizontalAlignment="Left"></TextBlock>
+                        </StackPanel>
+                        <Button x:Name="DeleteProd" Height="35" Width="150" Content="Удалить" Click="DeleteProd_Click"  />
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Page>

@@ -1,0 +1,107 @@
+﻿<Page x:Class="CourseProject.Pages.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CourseProject.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="590" d:DesignWidth="1050" 
+      Title="MainPage" >
+
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="800"/>
+            <ColumnDefinition />
+            
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="460"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1" Grid.Column="1" Background="#335252">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical" Width="267" >
+                    <Button Name="Categories" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center"   Width="267" Height="153"  >
+                        <Button.Content>
+                            <StackPanel Orientation="Vertical" HorizontalAlignment ="Center" Width="267" Height="153" VerticalAlignment="Center">
+                                <Image Source="/Resources/MainPageImage/shopping.png"  Width="100" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <TextBlock Text="Корзина"  FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Century Gothic"  Foreground="#D4DDE1"/>
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>
+                    <Button Name="Deliveries" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center"   Width="267" Height="153"  >
+                        <Button.Content>
+                            <StackPanel Orientation="Vertical" HorizontalAlignment ="Center" Width="267" Height="153" VerticalAlignment="Center">
+                                <Image Source="/Resources/MainPageImage/truck.png"  Width="100" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <TextBlock Text="Поставки"  FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Century Gothic"  Foreground="#D4DDE1"/>
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>
+                    <Button Name="Reports" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center"   Width="267" Height="153"  >
+                        <Button.Content>
+                            <StackPanel Orientation="Vertical" HorizontalAlignment ="Center" Width="267" Height="153" VerticalAlignment="Center">
+                                <Image Source="/Resources/MainPageImage/business.png"  Width="100" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <TextBlock Text="Отчеты"  FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Century Gothic"  Foreground="#D4DDE1"/>
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Width="267">
+                    <Button Name="Search" Style="{StaticResource Menu}"  Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center"   Width="267" Height="153"  >
+                        <Button.Content>
+                            <StackPanel Orientation="Vertical" HorizontalAlignment ="Center" Width="267" Height="153" VerticalAlignment="Center">
+                                <Image Source="/Resources/MainPageImage/search1.png"  Width="100" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <TextBlock Text="Поиск"  FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Century Gothic"  Foreground="#D4DDE1"/>
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>
+                    <Button Name="Tasks" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center"   Width="267" Height="153"  >
+                        <Button.Content>
+                            <StackPanel Orientation="Vertical" HorizontalAlignment ="Center" Width="267" Height="153" VerticalAlignment="Center">
+                                <Image Source="/Resources/MainPageImage/checklist.png"  Width="100" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <TextBlock Text="Задачи"  FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Century Gothic"  Foreground="#D4DDE1"/>
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>
+                    <Button Name="Increase" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center"   Width="267" Height="153"  >
+                        <Button.Content>
+                            <StackPanel Orientation="Vertical" HorizontalAlignment ="Center" Width="267" Height="153" VerticalAlignment="Center">
+                                <Image Source="/Resources/MainPageImage/increase.png"  Width="100" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <TextBlock Text="Граффики"  FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Century Gothic"  Foreground="#D4DDE1"/>
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Width="267">
+                    <Button Name="Events" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center"   Width="267" Height="153"  >
+                        <Button.Content>
+                            <StackPanel Orientation="Vertical" HorizontalAlignment ="Center" Width="267" Height="153" VerticalAlignment="Center">
+                                <Image Source="/Resources/MainPageImage/paties.png"  Width="100" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <TextBlock Text="События"  FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Century Gothic"  Foreground="#D4DDE1"/>
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>
+                    <Button Name="Support" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center"   Width="267" Height="153"  >
+                        <Button.Content>
+                            <StackPanel Orientation="Vertical" HorizontalAlignment ="Center" Width="267" Height="153" VerticalAlignment="Center">
+                                <Image Source="/Resources/MainPageImage/support.png"  Width="100" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <TextBlock Text="Тех.Поддержка"  FontSize="37" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Century Gothic"  Foreground="#D4DDE1"/>
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>
+                    <Button Name="More" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center"   Width="267" Height="153"  >
+                        <Button.Content>
+                            <StackPanel Orientation="Vertical" HorizontalAlignment ="Center" Width="267" Height="153" VerticalAlignment="Center">
+                                <Image Source="/Resources/MainPageImage/more.png"  Width="100" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <TextBlock Text="Другое"  FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Century Gothic"  Foreground="#D4DDE1"/>
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>
+                </StackPanel>
+
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

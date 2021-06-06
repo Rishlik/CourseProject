@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2443e14fc8484be1b9d0c4f47ea2ed2a" Name="Diagram1">
+        <EntityTypeShape EntityType="SaleComponentsModel.Basket" Width="1.5" PointX="3" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaleComponentsModel.Categories" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaleComponentsModel.Components" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaleComponentsModel.Compos_Congsign" Width="1.5" PointX="10" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaleComponentsModel.Counterparties" Width="1.5" PointX="7.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaleComponentsModel.List_Purchase" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaleComponentsModel.Privileges" Width="1.5" PointX="1.5" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaleComponentsModel.Purchase" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaleComponentsModel.Services" Width="1.5" PointX="3" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaleComponentsModel.Staffs" Width="1.5" PointX="3" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaleComponentsModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaleComponentsModel.Type" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaleComponentsModel.Users" Width="1.5" PointX="0.75" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaleComponentsModel.Сonsignment" Width="1.5" PointX="7.75" PointY="6.625" IsExpanded="true" />
+        <AssociationConnector Association="SaleComponentsModel.FK_Basket_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="SaleComponentsModel.FK_List_Purchase_Basket" ManuallyRouted="false" />
+        <AssociationConnector Association="SaleComponentsModel.FK_Components_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="SaleComponentsModel.FK_List_Purchase_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="SaleComponentsModel.FK_Services_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="SaleComponentsModel.FK_Components_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="SaleComponentsModel.FK_List_Purchase_Components1" ManuallyRouted="false" />
+        <AssociationConnector Association="SaleComponentsModel.FK_Compos_Congsign_Counterparties" ManuallyRouted="false" />
+        <AssociationConnector Association="SaleComponentsModel.FK_Compos_Congsign_Сonsignment" ManuallyRouted="false" />
+        <AssociationConnector Association="SaleComponentsModel.FK_List_Purchase_Purchase" ManuallyRouted="false" />
+        <AssociationConnector Association="SaleComponentsModel.FK_List_Purchase_Services1" ManuallyRouted="false" />
+        <AssociationConnector Association="SaleComponentsModel.FK_Users_Privileges1" ManuallyRouted="false" />
+        <AssociationConnector Association="SaleComponentsModel.FK_Staffs_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
